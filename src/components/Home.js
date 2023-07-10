@@ -21,7 +21,7 @@ function Home() {
   useEffect(() => {
     (function (d, m) {
       var kommunicateSettings = {
-        appId: "3cf485f7d8a649db4d55506b3594b428d",
+        appId: "create your id",
         popupWidget: true,
         automaticChatOpenOnNavigation: true
       };
