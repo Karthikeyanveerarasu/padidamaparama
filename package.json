@@ -1,0 +1,43 @@
+{
+  "name": "padidaparama",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "main": "src/index.js",
+  "dependencies": {
+    "axios": "1.3.4",
+    "bootstrap": "5.2.3",
+    "copy-to-clipboard": "3.3.3",
+    "loader-utils": "3.2.1",
+    "lottie-react": "2.4.0",
+    "react": "18.2.0",
+    "react-bootstrap": "2.7.2",
+    "react-copy-to-clipboard": "5.1.0",
+    "react-countup": "6.4.2",
+    "react-dom": "18.2.0",
+    "react-fast-marquee": "1.3.5",
+    "react-hot-toast": "2.4.0",
+    "react-icons": "4.8.0",
+    "react-reveal": "1.2.2",
+    "react-router-dom": "6.10.0",
+    "react-scripts": "5.0.1",
+    "react-scroll-trigger": "0.6.14",
+    "react-syntax-highlighter": "15.5.0"
+  },
+  "devDependencies": {
+    "@babel/runtime": "7.13.8",
+    "typescript": "4.1.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

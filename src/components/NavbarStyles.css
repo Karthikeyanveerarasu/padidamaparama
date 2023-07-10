@@ -1,0 +1,144 @@
+body {
+  background: linear-gradient(90deg, #effaff 0%, #d9e7ff 100%);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #1b2430;
+  padding: 15px 50px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+  position: relative; /* Add position relative */
+  z-index: 1; /* Add z-index to ensure the navigation is above the content */
+}
+
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#navbar li {
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+}
+
+#navbar li a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #fff;
+  transition: 0.5s ease-in-out;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+  color: #17cf97;
+}
+
+#navbar li a:hover::after,
+#navbar li a.active::after {
+  content: "";
+  width: 30%;
+  height: 2px;
+  background: #17cf97;
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+}
+
+#mobile {
+  display: none;
+}
+
+#mobile i {
+  color: #fff;
+  align-items: center;
+}
+
+ul li button {
+  padding: 0.5em 1em;
+  border: 2px solid #17c3b2;
+  position: relative;
+  overflow: hidden;
+  margin-top: 5px;
+  background-color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  transition: 0.3s;
+  z-index: 1;
+  font-family: inherit;
+  color: #17c3b2;
+}
+
+ul li button::before {
+  content: "";
+  width: 0;
+  height: 300%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: #17c3b2;
+  transition: 0.5s ease;
+  display: block;
+  z-index: -1;
+}
+
+ul li button:hover::before {
+  width: 105%;
+}
+
+ul li button:hover {
+  color: #111;
+}
+
+@media screen and (max-width: 1050px) {
+  ul li button {
+    width: 250px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  #navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 60.1px;
+    right: -300px;
+    width: 300px;
+    height: calc(100vh - 60.1px); /* Adjust height to account for top bar */
+    background: #2a3239;
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+    padding: 40px 0 0 10px;
+    transition: 0.3s ease-in-out;
+    overflow-y: auto; /* Add scrollable overflow */
+  }
+
+  #navbar.active {
+    right: 0;
+  }
+
+  #navbar li {
+    margin-bottom: 25px;
+  }
+
+  #mobile {
+    display: block;
+  }
+
+  #mobile i {
+    font-size: 24px;
+    cursor: pointer;
+  }
+}

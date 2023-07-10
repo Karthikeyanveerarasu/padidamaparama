@@ -1,0 +1,134 @@
+.card {
+  border: none;
+  border-radius: 10px;
+}
+
+.c-details span {
+  font-weight: 300;
+  font-size: 13px;
+}
+.icon-rotate {
+  transition: transform 1s ease-in-out;
+}
+
+.icon-rotate:hover {
+  transform: rotate(360deg);
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  background-color: #eee;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 39px;
+}
+
+.badge span {
+  background-color: #fffbec;
+  width: 60px;
+  height: 25px;
+  padding-bottom: 3px;
+  border-radius: 5px;
+  display: flex;
+  color: #fed85d;
+  justify-content: center;
+  align-items: center;
+}
+
+.progress {
+  height: 10px;
+  border-radius: 10px;
+}
+
+.progress div {
+  background-color: red;
+}
+
+.text1 {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.text2 {
+  color: #a5aec0;
+}
+
+.slist_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 0 10px;
+  color: white;
+  text-shadow: 2px 2px rgb(116, 116, 116);
+  text-transform: uppercase;
+  border: solid 2px black;
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-size: 17px;
+  background-color: hsl(49deg 98% 60%);
+  border-radius: 50px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+
+.slist_btn:active {
+  transform: scale(0.9);
+  transition: all 100ms ease;
+}
+
+.slist_btn svg {
+  transition: all 0.5s ease;
+  z-index: 2;
+}
+
+.play {
+  transition: all 0.5s ease;
+  transition-delay: 300ms;
+}
+
+.slist_btn:hover svg {
+  transform: scale(3) translate(50%);
+}
+a {
+  text-decoration: none;
+}
+.wrapper .text-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.now {
+  position: absolute;
+  left: 0;
+  transform: translateX(-100%);
+  transition: all 0.5s ease;
+  z-index: 2;
+}
+
+.slist_btn:hover .now {
+  transform: translateX(10px);
+  transition-delay: 300ms;
+}
+
+.slist_btn:hover .play {
+  transform: translateX(200%);
+  transition-delay: 300ms;
+}
+/* Home */
+.banner_title {
+  text-transform: uppercase;
+  font-size: 25px;
+  padding-bottom: 10px;
+  font-weight: 800;
+  color: black;
+  margin-top: 50px !important;
+}
+
+.lottie-animation {
+  width: 90%;
+}

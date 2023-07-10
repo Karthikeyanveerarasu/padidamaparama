@@ -1,0 +1,13 @@
+.title {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  justify-content: center;
+}
+.image_wrapper {
+  margin: 0px 10px;
+}
+
+.image_wrapper img {
+  width: 50%;
+}
